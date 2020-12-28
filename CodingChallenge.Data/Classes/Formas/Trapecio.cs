@@ -33,7 +33,7 @@ namespace CodingChallenge.Data.Classes
 
         public override string ObtenerNombre(Idioma idioma, bool esPlural)
         {
-            return idioma.ObtenerTrapecio(esPlural);
+            return idioma.ObtenerNombreTrapecio(esPlural);
         }
     }
 }

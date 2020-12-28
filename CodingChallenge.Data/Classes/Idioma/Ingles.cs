@@ -34,27 +34,27 @@ namespace CodingChallenge.Data.Classes
             return sb.ToString();
         }
 
-        public override string ObtenerCuadrado(bool esPlural)
+        public override string ObtenerNombreCuadrado(bool esPlural)
         {
             return esPlural ? "Squares" : "Square";
         }
 
-        public override string ObtenerTriangulo(bool esPlural)
+        public override string ObtenerNombreTriangulo(bool esPlural)
         {
             return esPlural ? "Triangles" : "Triangle";
         }
 
-        public override string ObtenerCirculo(bool esPlural)
+        public override string ObtenerNombreCirculo(bool esPlural)
         {
             return esPlural ? "Circles" : "Circle";
         }
 
-        public override string ObtenerTrapecio(bool esPlural)
+        public override string ObtenerNombreTrapecio(bool esPlural)
         {
             return esPlural ? "Trapezoids" : "Trapeze";
         }
 
-        public override string ObtenerRectangulo(bool esPlural)
+        public override string ObtenerNombreRectangulo(bool esPlural)
         {
             return esPlural ? "Rectangles" : "Rectangle";
         }

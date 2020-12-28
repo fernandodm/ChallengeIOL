@@ -22,7 +22,7 @@ namespace CodingChallenge.Data.Classes
 
         public override string ObtenerNombre(Idioma idioma, bool esPlural)
         {
-            return idioma.ObtenerTriangulo(esPlural);
+            return idioma.ObtenerNombreTriangulo(esPlural);
         }
     }
 }
