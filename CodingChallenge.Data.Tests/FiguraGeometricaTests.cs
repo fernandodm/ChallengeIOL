@@ -81,7 +81,7 @@ namespace CodingChallenge.Data.Tests
         }
 
         [TestCase]
-        public void TestObtenerNombreCirculo()
+        public void TestObtenerNombreCirculoCastellano()
         {
             Assert.AreEqual(_circulo.ObtenerNombre(_castellano, false), "Círculo");
             Assert.AreEqual(_circulo.ObtenerNombre(_castellano, true), "Círculos");
@@ -99,6 +99,111 @@ namespace CodingChallenge.Data.Tests
         {
             Assert.AreEqual(_circulo.ObtenerNombre(_italiano, false), "Cerchio");
             Assert.AreEqual(_circulo.ObtenerNombre(_italiano, true), "Cerchi");
+        }
+        #endregion
+
+        #region Triangulo
+        [TestCase]
+        public void TestCalcularAreaTriangulo()
+        {
+            Assert.AreEqual(_trianguloEquilatero.CalcularArea(), 10.8253175473055m);
+        }
+
+        [TestCase]
+        public void TestCalcularPerimetroTriangulo()
+        {
+            Assert.AreEqual(_trianguloEquilatero.CalcularPerimetro(), 15);
+        }
+
+        [TestCase]
+        public void TestObtenerNombreTrianguloCastellano()
+        {
+            Assert.AreEqual(_trianguloEquilatero.ObtenerNombre(_castellano, false), "Triángulo");
+            Assert.AreEqual(_trianguloEquilatero.ObtenerNombre(_castellano, true), "Triángulos");
+        }
+
+        [TestCase]
+        public void TestObtenerNombreTrianguloIngles()
+        {
+            Assert.AreEqual(_trianguloEquilatero.ObtenerNombre(_ingles, false), "Triangle");
+            Assert.AreEqual(_trianguloEquilatero.ObtenerNombre(_ingles, true), "Triangles");
+        }
+
+        [TestCase]
+        public void TestObtenerNombreTrianguloItaliano()
+        {
+            Assert.AreEqual(_trianguloEquilatero.ObtenerNombre(_italiano, false), "Triangolo");
+            Assert.AreEqual(_trianguloEquilatero.ObtenerNombre(_italiano, true), "Triangoli");
+        }
+        #endregion
+
+        #region Trapecio
+        [TestCase]
+        public void TestCalcularAreaTrapecio()
+        {
+            Assert.AreEqual(_trapecio.CalcularArea(), 15m);
+        }
+
+        [TestCase]
+        public void TestCalcularPerimetroTrapecio()
+        {
+            Assert.AreEqual(_trapecio.CalcularPerimetro(), 11m);
+        }
+
+        [TestCase]
+        public void TestObtenerNombreTrapecioCastellano()
+        {
+            Assert.AreEqual(_trapecio.ObtenerNombre(_castellano, false), "Trapecio");
+            Assert.AreEqual(_trapecio.ObtenerNombre(_castellano, true), "Trapecios");
+        }
+
+        [TestCase]
+        public void TestObtenerNombreTrapecioIngles()
+        {
+            Assert.AreEqual(_trapecio.ObtenerNombre(_ingles, false), "Trapeze");
+            Assert.AreEqual(_trapecio.ObtenerNombre(_ingles, true), "Trapezoids");
+        }
+
+        [TestCase]
+        public void TestObtenerNombreTrapecioItaliano()
+        {
+            Assert.AreEqual(_trapecio.ObtenerNombre(_italiano, false), "Trapezio");
+            Assert.AreEqual(_trapecio.ObtenerNombre(_italiano, true), "Trapezi");
+        }
+        #endregion
+
+        #region Rectangulo
+        [TestCase]
+        public void TestCalcularAreaRectangulo()
+        {
+            Assert.AreEqual(_rectangulo.CalcularArea(), 18m);
+        }
+
+        [TestCase]
+        public void TestCalcularPerimetroRectangulo()
+        {
+            Assert.AreEqual(_rectangulo.CalcularPerimetro(), 36m);
+        }
+
+        [TestCase]
+        public void TestObtenerNombreTrapecioRectangulo()
+        {
+            Assert.AreEqual(_rectangulo.ObtenerNombre(_castellano, false), "Rectangulo");
+            Assert.AreEqual(_rectangulo.ObtenerNombre(_castellano, true), "Rectangulos");
+        }
+
+        [TestCase]
+        public void TestObtenerNombreRectanguloIngles()
+        {
+            Assert.AreEqual(_rectangulo.ObtenerNombre(_ingles, false), "Rectangle");
+            Assert.AreEqual(_rectangulo.ObtenerNombre(_ingles, true), "Rectangles");
+        }
+
+        [TestCase]
+        public void TestObtenerNombreRectanguloItaliano()
+        {
+            Assert.AreEqual(_rectangulo.ObtenerNombre(_italiano, false), "Rettangolo");
+            Assert.AreEqual(_rectangulo.ObtenerNombre(_italiano, true), "Rettangoli");
         }
         #endregion
     }
